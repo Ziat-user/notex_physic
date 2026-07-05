@@ -42,8 +42,6 @@ protected:
     float m_height = 0.0f;
     float m_vx = 0.0f;
     float m_vy = 0.0f;
-    float m_ax = 0.0f;
-    float m_ay = 0.4f;
     bool  m_active = true;
     Color4 m_color;
 };

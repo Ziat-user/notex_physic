@@ -301,4 +301,5 @@ void Clear(void)
     g_ImmediateContext->ClearRenderTargetView(g_RenderTargetView, ClearColor);
     g_ImmediateContext->ClearDepthStencilView(g_DepthStencilView, D3D11_CLEAR_DEPTH, 1.0f, 0);
 }
+
 void Present(void) { g_SwapChain->Present(0, 0); }

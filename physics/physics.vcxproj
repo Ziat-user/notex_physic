@@ -146,6 +146,7 @@
     <ClCompile Include="game\game.cpp" />
     <ClCompile Include="game\object\circle\circle.cpp" />
     <ClCompile Include="game\object\ObjectManager.cpp" />
+    <ClCompile Include="game\object\physic\physics.cpp" />
     <ClCompile Include="game\object\square\square.cpp" />
     <ClCompile Include="game\sprite\sprite.cpp" />
     <ClCompile Include="main.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="game\object\ObjectManager.h" />
     <ClInclude Include="game\object\ObjectTag.h" />
     <ClInclude Include="game\object\color.h" />
+    <ClInclude Include="game\object\physic\physics.h" />
     <ClInclude Include="game\object\square\square.h" />
     <ClInclude Include="renderer\renderer.h" />
     <ClInclude Include="game\sprite\sprite.h" />

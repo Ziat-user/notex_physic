@@ -3,10 +3,8 @@
 
 void Square::Update(ObjectManager& manager)
 {
-	//m_vx += m_ax;
-	//m_vy += m_ay;
-	//m_x += m_vx;
-	//m_y += m_vy;
+	m_x += m_vx;
+	m_y += m_vy;
 }
 
 void Square::OnCollision(GameObject& other, ObjectManager& manager)

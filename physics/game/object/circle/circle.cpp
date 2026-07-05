@@ -1,12 +1,12 @@
 ﻿#include "circle.h"
 #include "../../sprite/sprite.h"
+#include "../physic/physics.h"
 
 void Circle::Update(ObjectManager& manager)
 {
-	//m_vx += m_ax;
-	//m_vy += m_ay;
-	//m_x += m_vx;
-	//m_y += m_vy;
+	//Gravity(m_vy, 0.4f);
+	m_x += m_vx;
+	m_y += m_vy;
 }
 
 void Circle::OnCollision(GameObject& other, ObjectManager& manager)
