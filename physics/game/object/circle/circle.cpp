@@ -1,16 +1,10 @@
 ﻿#include "circle.h"
 #include "../../sprite/sprite.h"
-
-Circle::Circle(ObjectTag tag, float x, float y, float radius, COLORPALLET color)
-	: GameObject(tag, x, y, radius * 2, radius * 2, color), m_radius(radius)
-{}
-
-Circle::~Circle() {}
+#include "../physic/physics.h"
 
 void Circle::Update(ObjectManager& manager)
 {
-	m_vx += m_ax;
-	m_vy += m_ay;
+	//Gravity(m_vy, 0.4f);
 	m_x += m_vx;
 	m_y += m_vy;
 }
