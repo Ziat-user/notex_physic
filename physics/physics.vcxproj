@@ -144,8 +144,9 @@
     <ClCompile Include="core\FrameTimer.cpp" />
     <ClCompile Include="core\window.cpp" />
     <ClCompile Include="game\game.cpp" />
-    <ClCompile Include="game\object\GameObject.cpp" />
+    <ClCompile Include="game\object\circle\circle.cpp" />
     <ClCompile Include="game\object\ObjectManager.cpp" />
+    <ClCompile Include="game\object\square\square.cpp" />
     <ClCompile Include="game\sprite\sprite.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="renderer\renderer.cpp" />
@@ -157,11 +158,13 @@
     <ClInclude Include="core\main.h" />
     <ClInclude Include="core\window.h" />
     <ClInclude Include="game\game.h" />
+    <ClInclude Include="game\object\circle\circle.h" />
     <ClInclude Include="game\object\GameObject.h" />
     <ClInclude Include="game\object\Object.h" />
     <ClInclude Include="game\object\ObjectManager.h" />
     <ClInclude Include="game\object\ObjectTag.h" />
     <ClInclude Include="game\object\color.h" />
+    <ClInclude Include="game\object\square\square.h" />
     <ClInclude Include="renderer\renderer.h" />
     <ClInclude Include="game\sprite\sprite.h" />
   </ItemGroup>
