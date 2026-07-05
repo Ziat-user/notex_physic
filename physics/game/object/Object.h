@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-struct Rect
+struct Rect_state
 {
     float x = 0.0f;
     float y = 0.0f;
@@ -8,7 +8,7 @@ struct Rect
     float height = 0.0f;
 };
 
-struct Circle
+struct Circle_state
 {
 	float x = 0.0f;
 	float y = 0.0f;

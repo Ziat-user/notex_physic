@@ -17,20 +17,18 @@ public:
         float width,
         float height,
         COLORPALLET color = COLORPALLET::white
-    );
+    ) {};
 
     virtual ~GameObject() = default;
 
-    virtual void Update(ObjectManager& manager);
-    virtual void Draw() const;
-    virtual void OnCollision(GameObject& other, ObjectManager& manager);
+    virtual void Update(ObjectManager& manager) = 0;
+    virtual void Draw() const = 0;
+    virtual void OnCollision(GameObject& other, ObjectManager& manager) = 0;
 
-    ObjectTag GetTag() const;
-    Rect GetRect() const;
-	Circle GetCircle() const;
+	ObjectTag GetTag() const { return m_tag; }
 
-    bool IsActive() const;
-    void SetActive(bool active);
+	bool IsActive() const { return m_active; }
+	void SetActive(bool active) { m_active = active; }
 
 protected:
     ObjectTag m_tag = ObjectTag::None;
